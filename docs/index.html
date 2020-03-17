@@ -4,8 +4,8 @@
 
 <h1>Send ur email.</h1>
 
-<h3>:</h3>
-<form action="/action_page.php">
+<h3></h3>
+<form action="/action_page.php" id="nodemailer">
   <label for="email">Enter your email:</label>
   <input type="email" id="email" name="email">
   <input type="submit">
@@ -13,7 +13,7 @@
 
 <script>
 var nodemailer = require('nodemailer');
-
+document.getElementById("nodemailer").innerHTML=
 var transporter = nodemailer.createTransport({
   service: 'gmail',
   auth: {
