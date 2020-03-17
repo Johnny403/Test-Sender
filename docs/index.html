@@ -11,7 +11,7 @@
   <input type="submit">
 </form>
 
-
+<script>
 var nodemailer = require('nodemailer');
 
 var transporter = nodemailer.createTransport({
@@ -37,5 +37,6 @@ transporter.sendMail(mailOptions, function(error, info){
   }
 }); 
 
+  </script>
 </body>
 </html>
